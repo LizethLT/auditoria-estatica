@@ -23,3 +23,6 @@
 ## 5. Cumplimiento DevOps
 - [ ] ¿El proyecto incorpora un mecanismo centralizado de registro de eventos (Logging) para auditar fallos en producción?
 - [ ] ¿La configuración del proyecto obliga a tratar las advertencias de compilación como errores (`TreatWarningsAsErrors`) para evitar deuda técnica?
+
+
+

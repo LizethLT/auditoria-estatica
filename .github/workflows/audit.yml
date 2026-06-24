@@ -9,17 +9,17 @@ on:
 jobs:
   audit-and-quality:
     name: Inspección de Código Estática
-    runs-on: windows-latest # Elegimos Windows para ejecutar de forma nativa el script .ps1
+    runs-on: windows-latest
 
     steps:
     - name: Descargar Código Fuente
-      [cite_start]uses: actions/checkout@v4 [cite: 69]
+      uses: actions/checkout@v4
 
     - name: Configurar Entorno .NET 8
-      [cite_start]uses: actions/setup-dotnet@v4 [cite: 71]
+      uses: actions/setup-dotnet@v4
       with:
-        [cite_start]dotnet-version: '8.0.x' [cite: 72]
+        dotnet-version: '8.0.x'
 
     - name: Ejecutar Script de Auditoría Automatizada
       run: |
-        powershell -ExecutionPolicy Bypass -File ./audit-script.ps1 [cite: 32, 76]
+        powershell -ExecutionPolicy Bypass -File ./audit-script.ps1
